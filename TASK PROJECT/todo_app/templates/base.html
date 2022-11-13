@@ -1,0 +1,31 @@
+<!-- todo_list/todo_app/templates/base.html -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+
+    <title>Django To-do Lists</title>
+</head>
+
+<body>
+    <div>
+        <h1 onclick="location.href='{% url "index" %}'">Django To-do Lists</h1>
+    </div>
+    <div>
+        {% block content %}
+        This content will be replaced by different html code for each page.
+        {% endblock %}
+    </div>
+</body>
+
+</html>
